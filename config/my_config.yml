@@ -1,0 +1,20 @@
+#アプリケーションの設定用ファイル
+
+COMMON: &COMMON
+  author: "hogerattyo"
+  logo:
+    source: "testes"
+    width: 215
+    height: 67
+
+development:
+  hoge: "dev"
+  <<: *COMMON
+
+development:
+  hoge: "test"
+  <<: *COMMON
+
+production:
+  hoge: "pro"
+  <<: *COMMON
